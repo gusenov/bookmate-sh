@@ -24,7 +24,7 @@ jq --raw-output '.quotes[].book.title' public-quotes.json | sort -u
 jq --raw-output '.quotes[].book | "<a href=\"https://bookmate.com/books/" + .uuid + "\">" + .title + "</a> (" + (.quotes_count|tostring) + " всех цитат)<br/>"' public-quotes.json | sort -u > books.html
 ```
 
-# [Книги]((/books-private/))
+# [Книги](/books-private/)
 
 Количество книг:
 
